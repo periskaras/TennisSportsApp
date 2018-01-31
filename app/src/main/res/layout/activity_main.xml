@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a2c776"
+    android:orientation="horizontal"
+    tools:context="com.example.android.projectsportsapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Player 1" />
+
+        <TextView
+            android:id="@+id/player_1_scoreboard"
+            style="@style/Texts"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:onClick="pointsCalculatorOne"
+            android:text="0"
+            android:textSize="80sp" />
+
+        <Button
+            style="@style/Buttons"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedbutton"
+            android:onClick="decreaseScoreboardA"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="16dp"
+            android:background="#fff" />
+
+        <TextView
+            style="@style/Texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Games" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                style="@style/Buttons"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/roundedbutton"
+                android:onClick="GamesMinusA"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/Games_First"
+                style="@style/Texts"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+
+            <Button
+                style="@style/Buttons"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/roundedbutton"
+                android:onClick="GamesPlusA"
+                android:text="+" />
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Sets" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <Button
+                style="@style/Buttons"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/roundedbutton"
+                android:onClick="SetsMinusA"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/Sets_First"
+                style="@style/Texts"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+
+            <Button
+                style="@style/Buttons"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/roundedbutton"
+                android:onClick="SetsPlusA"
+                android:text="+" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="#fff" />
+
+        <Button
+            style="@style/Buttons"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0"
+            android:background="@drawable/roundedbutton"
+            android:onClick="resetAll"
+            android:text="r" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Player 2" />
+
+        <TextView
+            android:id="@+id/player_2_scoreboard"
+            style="@style/Texts"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:onClick="pointsCalculatorTwo"
+            android:text="0"
+            android:textSize="80sp" />
+
+        <Button
+            style="@style/Buttons"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedbutton"
+            android:onClick="decreaseScoreboardB"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="16dp"
+            android:background="#fff" />
+
+        <TextView
+            style="@style/Texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Games" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                style="@style/Buttons"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/roundedbutton"
+                android:onClick="GamesMinusB"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/Games_Second"
+                style="@style/Texts"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+
+            <Button
+                style="@style/Buttons"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/roundedbutton"
+                android:onClick="GamesPlusB"
+                android:text="+" />
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Sets" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <Button
+                style="@style/Buttons"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/roundedbutton"
+                android:onClick="SetsMinusB"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/Sets_Second"
+                style="@style/Texts"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0" />
+
+            <Button
+                style="@style/Buttons"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:background="@drawable/roundedbutton"
+                android:onClick="SetsPlusB"
+                android:text="+" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
